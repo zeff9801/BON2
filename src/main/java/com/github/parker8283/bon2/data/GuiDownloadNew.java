@@ -28,9 +28,10 @@ import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 public class GuiDownloadNew extends JFrame {
-    
-    private static final String MAPPINGS_URL_SNAPSHOT = "http://export.mcpbot.bspk.rs/mcp_snapshot/%1$s-%2$s/mcp_snapshot-%1$s-%2$s.zip";
-    private static final String MAPPINGS_URL_STABLE = "http://export.mcpbot.bspk.rs/mcp_stable/%1$s-%2$s/mcp_stable-%1$s-%2$s.zip";
+
+    public static final String VERSION_JSON = "http://export.mcpbot.golde.org/versions.json";
+    public static final String MAPPINGS_URL_SNAPSHOT = "http://export.mcpbot.golde.org/mcp_snapshot/%1$s-%2$s/mcp_snapshot-%1$s-%2$s.zip";
+    public static final String MAPPINGS_URL_STABLE = "http://export.mcpbot.golde.org/mcp_stable/%1$s-%2$s/mcp_stable-%1$s-%2$s.zip";
     
     private static class MappingListEntry {
         public final boolean stable;

@@ -17,50 +17,34 @@ public class GUIProgressListener implements IProgressListener {
 
     @Override
     public void start(final int max, final String label) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                progressLabel.setText(label);
-                if(progressBar.isIndeterminate()) {
-                    progressBar.setIndeterminate(false);
-                }
-                if(max >= 0) {
-                    progressBar.setMaximum(max);
-                }
-                progressBar.setValue(0);
+        SwingUtilities.invokeLater(() -> {
+            progressLabel.setText(label);
+            if(progressBar.isIndeterminate()) {
+                progressBar.setIndeterminate(false);
             }
+            if(max >= 0) {
+                progressBar.setMaximum(max);
+            }
+            progressBar.setValue(0);
         });
     }
 
     @Override
     public void startWithoutProgress(final String label) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                progressLabel.setText(label);
-                progressBar.setIndeterminate(true);
-            }
+        SwingUtilities.invokeLater(() -> {
+            progressLabel.setText(label);
+            progressBar.setIndeterminate(true);
         });
     }
 
     @Override
     public void setProgress(final int value) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                progressBar.setValue(value);
-            }
-        });
+        SwingUtilities.invokeLater(() -> progressBar.setValue(value));
     }
 
     @Override
     public void setMax(final int max) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                progressBar.setMaximum(max);
-            }
-        });
+        SwingUtilities.invokeLater(() -> progressBar.setMaximum(max));
     }
     
     @Override

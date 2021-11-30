@@ -110,16 +110,13 @@ public class BON2 {
     private static void launchGui() {
         log(VERSION);
         log("No arguments passed. Launching gui...");
-        EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-                    BON2Gui frame = new BON2Gui();
-                    frame.setVisible(true);
-                } catch(Exception e) {
-                    e.printStackTrace();
-                }
+        EventQueue.invokeLater(() -> {
+            try {
+                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+                BON2Gui frame = new BON2Gui();
+                frame.setVisible(true);
+            } catch(Exception e) {
+                e.printStackTrace();
             }
         });
     }

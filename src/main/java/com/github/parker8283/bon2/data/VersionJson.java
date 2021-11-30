@@ -30,7 +30,7 @@ public class VersionJson {
         }
         
         public boolean hasSnapshot(String version) {
-            return hasSnapshot(Integer.valueOf(version));
+            return hasSnapshot(Integer.parseInt(version));
         }
         
         public boolean hasSnapshot(int version) {
@@ -38,7 +38,7 @@ public class VersionJson {
         }
         
         public boolean hasStable(String version) {
-            return hasStable(Integer.valueOf(version));
+            return hasStable(Integer.parseInt(version));
         }
         
         public boolean hasStable(int version) {

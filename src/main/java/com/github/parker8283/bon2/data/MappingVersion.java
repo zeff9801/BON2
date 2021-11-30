@@ -79,8 +79,8 @@ public class MappingVersion implements Comparable<MappingVersion> {
             } else if (i >= subv2.length) {
                 return 1;
             }
-            int sub1 = Integer.valueOf(subv1[i]);
-            int sub2 = Integer.valueOf(subv2[i]);
+            int sub1 = Integer.parseInt(subv1[i]);
+            int sub2 = Integer.parseInt(subv2[i]);
             if (sub1 != sub2) {
                 return sub1 - sub2;
             }

@@ -43,12 +43,9 @@ public enum VersionLookup {
         HttpURLConnection request = (HttpURLConnection) url.openConnection();
         request.connect();
 
-        Reader in = new InputStreamReader(request.getInputStream());
-
-        try {
-            INSTANCE.jsoncache = new VersionJson(GSON.fromJson(in, new TypeToken<Map<String, MappingsJson>>() {}.getType()));
-        } finally {
-            in.close();
+        try (Reader in = new InputStreamReader(request.getInputStream())) {
+            INSTANCE.jsoncache = new VersionJson(GSON.fromJson(in, new TypeToken<Map<String, MappingsJson>>() {
+            }.getType()));
         }
     }
 }

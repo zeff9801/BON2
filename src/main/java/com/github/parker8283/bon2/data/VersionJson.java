@@ -1,10 +1,10 @@
 package com.github.parker8283.bon2.data;
 
-import java.util.Map;
-import java.util.Set;
-
 import gnu.trove.set.TIntSet;
 import gnu.trove.set.hash.TIntHashSet;
+
+import java.util.Map;
+import java.util.Set;
 
 public class VersionJson {
     

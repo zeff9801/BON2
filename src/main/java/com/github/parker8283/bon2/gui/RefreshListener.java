@@ -1,16 +1,14 @@
 package com.github.parker8283.bon2.gui;
 
-import java.awt.Component;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-
-import javax.swing.JComboBox;
-import javax.swing.JOptionPane;
-
 import com.github.parker8283.bon2.BON2Gui;
 import com.github.parker8283.bon2.data.BONFiles;
 import com.github.parker8283.bon2.data.MappingVersion;
 import com.github.parker8283.bon2.util.BONUtils;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class RefreshListener extends MouseAdapter {
     private Component parent;

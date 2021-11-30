@@ -1,8 +1,8 @@
 package com.github.parker8283.bon2.data;
 
-import java.io.File;
-
 import com.google.common.base.MoreObjects;
+
+import java.io.File;
 
 public class BONFiles {
     

@@ -1,14 +1,14 @@
 package com.github.parker8283.bon2.srg;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-import java.util.Map;
-
 import com.github.parker8283.bon2.data.IProgressListener;
 import com.google.common.base.Charsets;
 import com.google.common.collect.Maps;
 import com.google.common.io.Files;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 public class Repo {
 

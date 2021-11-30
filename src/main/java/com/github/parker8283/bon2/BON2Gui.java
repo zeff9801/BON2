@@ -1,31 +1,17 @@
 package com.github.parker8283.bon2;
 
-import java.awt.Dimension;
-import java.io.IOException;
-import java.util.List;
-import java.util.prefs.Preferences;
+import com.github.parker8283.bon2.data.GuiDownloadNew;
+import com.github.parker8283.bon2.data.MappingVersion;
+import com.github.parker8283.bon2.data.VersionLookup;
+import com.github.parker8283.bon2.gui.*;
+import com.github.parker8283.bon2.util.OSUtils;
+import com.google.common.collect.Lists;
 
 import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
-
-import com.github.parker8283.bon2.data.GuiDownloadNew;
-import com.github.parker8283.bon2.data.MappingVersion;
-import com.github.parker8283.bon2.data.VersionLookup;
-import com.github.parker8283.bon2.gui.BrowseListener;
-import com.github.parker8283.bon2.gui.JarDropTarget;
-import com.github.parker8283.bon2.gui.LinuxBrowseListener;
-import com.github.parker8283.bon2.gui.RefreshListener;
-import com.github.parker8283.bon2.gui.StartListener;
-import com.github.parker8283.bon2.util.OSUtils;
-import com.google.common.collect.Lists;
-
-import java.awt.datatransfer.DataFlavor;
-import java.awt.dnd.DnDConstants;
-import java.awt.dnd.DropTarget;
-import java.awt.dnd.DropTargetDropEvent;
-import java.io.File;
+import java.awt.*;
 import java.io.IOException;
 import java.util.List;
 import java.util.prefs.Preferences;

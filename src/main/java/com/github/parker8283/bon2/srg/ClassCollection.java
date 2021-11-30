@@ -1,10 +1,10 @@
 package com.github.parker8283.bon2.srg;
 
+import org.objectweb.asm.tree.ClassNode;
+
 import java.util.List;
 import java.util.Map;
 import java.util.jar.Manifest;
-
-import org.objectweb.asm.tree.ClassNode;
 
 public class ClassCollection {
     private List<ClassNode> classes;

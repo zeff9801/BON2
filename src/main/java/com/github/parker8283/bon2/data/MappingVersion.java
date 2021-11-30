@@ -1,8 +1,8 @@
 package com.github.parker8283.bon2.data;
 
-import java.io.File;
-
 import com.google.common.base.Preconditions;
+
+import java.io.File;
 
 public class MappingVersion implements Comparable<MappingVersion> {
 

@@ -1,12 +1,20 @@
 package com.github.parker8283.bon2.util;
 
+import com.github.parker8283.bon2.data.BONFiles;
+import com.github.parker8283.bon2.data.MappingVersion;
+import com.github.parker8283.bon2.data.VersionLookup;
+import com.google.common.collect.Lists;
+
+import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+import javax.swing.text.Document;
+import javax.swing.text.JTextComponent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.Enumeration;
 import java.util.List;
 import java.util.Objects;
@@ -14,21 +22,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
-import javax.swing.text.Document;
-import javax.swing.text.JTextComponent;
-
-import com.github.parker8283.bon2.data.BONFiles;
-import com.github.parker8283.bon2.data.MappingVersion;
-import com.github.parker8283.bon2.data.VersionLookup;
-import com.google.common.collect.Lists;
 
 public class BONUtils {
 

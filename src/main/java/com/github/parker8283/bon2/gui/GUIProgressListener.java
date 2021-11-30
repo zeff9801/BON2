@@ -1,10 +1,8 @@
 package com.github.parker8283.bon2.gui;
 
-import javax.swing.JLabel;
-import javax.swing.JProgressBar;
-import javax.swing.SwingUtilities;
-
 import com.github.parker8283.bon2.data.IProgressListener;
+
+import javax.swing.*;
 
 public class GUIProgressListener implements IProgressListener {
     private JLabel progressLabel;

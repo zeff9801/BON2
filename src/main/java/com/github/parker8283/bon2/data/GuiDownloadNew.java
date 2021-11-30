@@ -1,16 +1,11 @@
 package com.github.parker8283.bon2.data;
 
-import java.awt.Dimension;
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.nio.channels.ClosedByInterruptException;
-import java.nio.file.Files;
-import java.text.DateFormatSymbols;
-import java.util.*;
-import java.util.Map.Entry;
-import java.util.stream.Collectors;
+import com.github.parker8283.bon2.data.VersionJson.MappingsJson;
+import com.github.parker8283.bon2.gui.GUIProgressListener;
+import com.github.parker8283.bon2.gui.RefreshListener;
+import com.github.parker8283.bon2.util.BONUtils;
+import com.google.common.collect.Lists;
+import org.apache.commons.lang3.ArrayUtils;
 
 import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;
@@ -18,14 +13,19 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
-
-import org.apache.commons.lang3.ArrayUtils;
-
-import com.github.parker8283.bon2.data.VersionJson.MappingsJson;
-import com.github.parker8283.bon2.gui.GUIProgressListener;
-import com.github.parker8283.bon2.gui.RefreshListener;
-import com.github.parker8283.bon2.util.BONUtils;
-import com.google.common.collect.Lists;
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.nio.channels.ClosedByInterruptException;
+import java.nio.file.Files;
+import java.text.DateFormatSymbols;
+import java.util.List;
+import java.util.*;
+import java.util.Queue;
+import java.util.Map.Entry;
+import java.util.stream.Collectors;
 
 public class GuiDownloadNew extends JFrame {
     

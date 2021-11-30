@@ -1,12 +1,5 @@
 package com.github.parker8283.bon2;
 
-import java.awt.EventQueue;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.List;
-
-import javax.swing.UIManager;
-
 import com.github.parker8283.bon2.cli.CLIErrorHandler;
 import com.github.parker8283.bon2.cli.CLIProgressListener;
 import com.github.parker8283.bon2.data.BONFiles;
@@ -15,10 +8,15 @@ import com.github.parker8283.bon2.data.MappingVersion;
 import com.github.parker8283.bon2.data.VersionLookup;
 import com.github.parker8283.bon2.exception.InvalidMappingsVersionException;
 import com.github.parker8283.bon2.util.BONUtils;
-
 import joptsimple.OptionException;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
+
+import javax.swing.*;
+import java.awt.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.List;
 
 public class BON2 {
     public static final String VERSION = "Bearded Octo Nemesis v${DEV} by Parker8283. BON v1 by immibis.";

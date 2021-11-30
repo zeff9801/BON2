@@ -1,8 +1,5 @@
 package com.github.parker8283.bon2;
 
-import java.io.File;
-import java.io.IOException;
-
 import com.github.parker8283.bon2.data.IErrorHandler;
 import com.github.parker8283.bon2.data.IProgressListener;
 import com.github.parker8283.bon2.data.MappingVersion;
@@ -10,6 +7,9 @@ import com.github.parker8283.bon2.srg.ClassCollection;
 import com.github.parker8283.bon2.srg.Repo;
 import com.github.parker8283.bon2.util.JarUtils;
 import com.github.parker8283.bon2.util.Remapper;
+
+import java.io.File;
+import java.io.IOException;
 
 public class BON2Impl {
 

@@ -1,11 +1,10 @@
 package com.github.parker8283.bon2.gui;
 
-import java.awt.Component;
-
-import javax.swing.JOptionPane;
-
 import com.github.parker8283.bon2.BON2Gui;
 import com.github.parker8283.bon2.data.IErrorHandler;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class GUIErrorHandler implements IErrorHandler {
     private Component parent;

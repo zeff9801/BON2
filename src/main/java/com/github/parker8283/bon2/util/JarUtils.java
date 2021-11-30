@@ -1,5 +1,14 @@
 package com.github.parker8283.bon2.util;
 
+import com.github.parker8283.bon2.data.IErrorHandler;
+import com.github.parker8283.bon2.data.IProgressListener;
+import com.github.parker8283.bon2.io.FixedJarInputStream;
+import com.github.parker8283.bon2.srg.ClassCollection;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
+import org.objectweb.asm.tree.ClassNode;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -8,16 +17,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.jar.*;
-
-import org.objectweb.asm.tree.ClassNode;
-
-import com.github.parker8283.bon2.data.IErrorHandler;
-import com.github.parker8283.bon2.data.IProgressListener;
-import com.github.parker8283.bon2.io.FixedJarInputStream;
-import com.github.parker8283.bon2.srg.ClassCollection;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
 
 public class JarUtils {
 

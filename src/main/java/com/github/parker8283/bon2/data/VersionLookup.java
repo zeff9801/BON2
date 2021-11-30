@@ -1,16 +1,16 @@
 package com.github.parker8283.bon2.data;
 
+import com.github.parker8283.bon2.data.VersionJson.MappingsJson;
+import com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
-
-import com.github.parker8283.bon2.data.VersionJson.MappingsJson;
-import com.google.common.reflect.TypeToken;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 public enum VersionLookup {
 

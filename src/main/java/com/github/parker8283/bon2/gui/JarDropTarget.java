@@ -1,6 +1,7 @@
 package com.github.parker8283.bon2.gui;
 
-import java.awt.Component;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.dnd.DnDConstants;
 import java.awt.dnd.DropTarget;
@@ -8,8 +9,6 @@ import java.awt.dnd.DropTargetDropEvent;
 import java.io.File;
 import java.util.List;
 import java.util.function.Consumer;
-
-import javax.swing.JOptionPane;
 
 @SuppressWarnings("serial")
 public class JarDropTarget extends DropTarget {

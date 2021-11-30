@@ -1,18 +1,13 @@
 package com.github.parker8283.bon2.gui;
 
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.io.File;
-
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JProgressBar;
-import javax.swing.JTextField;
-
 import com.github.parker8283.bon2.BON2Gui;
 import com.github.parker8283.bon2.BON2Impl;
 import com.github.parker8283.bon2.data.MappingVersion;
+
+import javax.swing.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.io.File;
 
 public class StartListener extends MouseAdapter {
     private BON2Gui parent;

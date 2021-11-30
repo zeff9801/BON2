@@ -1,15 +1,14 @@
 //MrPyro 2019
 package com.github.parker8283.bon2.gui;
 
-import java.awt.FileDialog;
+import com.github.parker8283.bon2.BON2Gui;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import java.nio.file.Paths;
-
-import javax.swing.JTextField;
-
-import com.github.parker8283.bon2.BON2Gui;
 
 public class LinuxBrowseListener extends MouseAdapter{
     private BON2Gui parent;

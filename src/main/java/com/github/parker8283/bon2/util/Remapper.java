@@ -1,11 +1,10 @@
 package com.github.parker8283.bon2.util;
 
-import org.objectweb.asm.tree.*;
-
 import com.github.parker8283.bon2.data.IProgressListener;
 import com.github.parker8283.bon2.srg.ClassCollection;
 import com.github.parker8283.bon2.srg.Mapping;
 import com.github.parker8283.bon2.srg.Repo;
+import org.objectweb.asm.tree.*;
 
 public class Remapper {
 
